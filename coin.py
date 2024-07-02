@@ -2,6 +2,12 @@ import random
 
 cnt = 0
 
+print("Who are you?")
+print(">", end = " ")
+Name = str(input())
+print("Hello,", Name, end = "")
+print("!")
+
 print("Tossing a coin...")
 for i in range(3):
     judge = random.randint(0, 100)
