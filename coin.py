@@ -2,6 +2,12 @@ import random
 
 cnt = 0
 
+print("Who are you?")
+print(">", end = " ")
+Name = str(input())
+print("Hello,", Name, end = "")
+print("!")
+
 print("Tossing a coin...")
 for i in range(3):
     judge = random.randint(0, 100)
@@ -15,8 +21,7 @@ for i in range(3):
 
 print("Heads:", cnt, end = "")
 print(", Tails:", 3 - cnt)
-
 if(cnt > 1):
-    print("You won!")
+    print("{} won!".format(Name))
 else:
-    print("You lost!")
+    print("{} lost!".format(Name))
