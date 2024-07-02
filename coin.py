@@ -15,3 +15,8 @@ for i in range(3):
 
 print("Heads:", cnt, end = "")
 print(", Tails:", 3 - cnt)
+
+if(cnt > 1):
+    print("You won!")
+else:
+    print("You lost!")
